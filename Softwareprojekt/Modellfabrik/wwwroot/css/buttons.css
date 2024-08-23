@@ -1,0 +1,145 @@
+﻿/*Style von Speechbutton und Pulsebutton*/
+.speechbutton {
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 50%;
+}
+
+/*Style des Speechbuttons*/
+#speechbutton {
+    border: none;
+    background-color: gray;
+    z-index: 1;
+}
+
+/*Style des Pulsebuttons*/
+#pulser {
+    background: #4256C5;
+    z-index: 0;
+}
+
+/*Position des Microphone Icons*/
+#mic-icon {
+    width: 44px;
+    height: 69px
+}
+
+/*Animation des Pulsebuttons*/
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.6);
+        opacity: 0.4;
+    }
+}
+
+/*Slider Animationen Start--------------------------*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 95px;
+    border-radius: 10px;
+    left: 5px;
+    bottom: 5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+    border-radius: 10px;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(95px);
+    -ms-transform: translateX(95px);
+    transform: translateX(95px);
+}
+/*Slider Animationen Ende--------------------------*/
+
+
+/*Buttonanimationen in manueller Steuerung Start----------------------------------------------------*/
+.btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px #000000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #1D2865;
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px #000000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #333;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*Buttonanimationen in manueller Steuerung Ende----------------------------------------------------*/
+
+
+/*Style für den Reconnct Button*/
+#reconnect-button {
+    background-color: #2196F3;
+    border-radius: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border: 0;
+    color: aliceblue;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/*Buttonanimationen für den Reconnecting-Button----------------------------------------------------*/
+
+#reconnect-button:hover {
+    background-color: aliceblue;
+    color: #1D2865;
+}
+
+#reconnect-button:disabled {
+    background: gray;
+    color: aliceblue;
+}

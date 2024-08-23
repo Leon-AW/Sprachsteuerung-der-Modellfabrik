@@ -1,0 +1,76 @@
+﻿/*Style für den Namen der Einstellung*/
+#settings text {
+    margin-right: 30px;
+    font-size: 25px;
+    color: aliceblue;
+}
+
+/*Style für die erste Zeile*/
+#settings td:first-child{
+    text-align: left;
+    font-weight: bold;
+}
+
+/*Style für die letzte Zeile*/
+#settings td:last-child {
+    text-align: center;
+
+}
+
+/*Style für die Tabelle*/
+#settings {
+    margin: 0 auto;
+    width: 50%;
+    border-collapse: separate;
+    border-spacing: 0 30px;
+}
+
+/*Style des linken Bereichs vom Slider*/
+.slider-label-left{
+    margin-right: 50px;
+    font-size: 20px;
+}
+
+/*Style des rechten Bereichs vom Slider*/
+.slider-label-right {
+    font-size: 20px;
+}
+
+/*Style des Selbsterstellten Zeilebumbruch*/
+.custombr {
+    display: block; 
+    content: ""; 
+    margin-top: 10px;
+}
+
+/*Style Switcher und Reconnect-Button*/
+.switch, #reconnect-button {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+/*Style Switche Input*/
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/*Style für den Slider*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 10px;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+

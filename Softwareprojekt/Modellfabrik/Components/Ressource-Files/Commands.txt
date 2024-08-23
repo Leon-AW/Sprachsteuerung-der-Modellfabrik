@@ -1,0 +1,44 @@
+﻿Bestelle ein rotes Werkstück.
+f/o/order
+{"ts":"YYYY-MM-DDThh:mm:ss.fffZ", "type":"RED"}
+Ein rotes Werkstück wird bestellt!
+
+Bestelle ein weißes Werkstück.
+f/o/order
+{"ts":"YYYY-MM-DDThh:mm:ss.fffZ", "type":"WHITE"}
+Ein weißes Werkstück wird bestellt!
+
+Bestelle ein blaues Werkstück.
+f/o/order
+{"ts":"YYYY-MM-DDThh:mm:ss.fffZ", "type":"BLUE"}
+Ein blaues Werkstück wird bestellt!
+
+Wieviele rote Werkstücke befinden sich im Lager?
+f/i/stock
+{}
+Anzahl der roten Werkstücke im Lager: (X)!
+
+Wieviele weiße Werkstücke befinden sich im Lager?
+f/i/stock
+{}
+Anzahl der weißen Werkstücke im Lager: (X)!
+
+Wieviele blaue Werkstücke befinden sich im Lager?
+f/i/stock
+{}
+Anzahl der blauen Werkstücke im Lager: (X)!
+
+Wie ist die Temperatur gerade?
+i/bme680
+{}
+Die Umgebungstemperatur der Modellfabrik beträgt (X) °C! 
+
+Wie ist der Luftdruck gerade?
+i/bme680
+{}
+Der Luftdruck in der Modellfabrik beträgt (X) Hektopascal! 
+
+Wo befindet sich meine Bestellung gerade?
+mehrere Topics
+{}
+(X)

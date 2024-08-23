@@ -1,0 +1,62 @@
+﻿<div class="container" id="background-container">
+    <br>
+    <br>
+    <h1>Einstellungen</h1>
+    <br>
+    <br>
+
+    <table id="settings">
+        <tr>
+            <td><text>Sprachstimme:</text></td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" id="voice-change-slider" checked="checked">
+                    <span class="slider" onclick="changeVoice();">
+                        <br class="custombr" />
+                        <b><span class="slider-label-left">Female</span><span class="slider-label-right">Male</span></b>
+                    </span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><text>Sprachverlauf:</text></td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" id="speech-history-slider" checked="checked">
+                    <span class="slider" onclick="speechHistorySetting();">
+                        <br class="custombr" />
+                        <b><span class="slider-label-left">Show</span><span class="slider-label-right">Hide</span></b>
+                    </span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><text>Antwortzeit:</text></td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" id="answer-time-slider" checked="checked">
+                    <span class="slider" onclick="answerTimeSetting();">
+                        <br class="custombr" />
+                        <b><span class="slider-label-left">Show</span><span class="slider-label-right">Hide</span></b>
+                    </span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td><text>Testbroker:</text></td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" id="testbroker">
+                    <span class="slider" onclick="testBrokerSetting();">
+                        <br class="custombr" />
+                        <b><span class="slider-label-left">Yes</span><span class="slider-label-right">No</span></b>
+                    </span>
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button id="reconnect-button" onclick="tryConnectToBroker(); loadingScreen(3);">Reconnect</button></td>
+        </tr>
+    </table>
+</div>

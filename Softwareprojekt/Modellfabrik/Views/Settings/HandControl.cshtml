@@ -1,0 +1,46 @@
+﻿@model Modellfabrik.Controllers.SettingsController
+
+<div class="container" id="background-container">
+    <br>
+    <br>
+    <h1>Manuelle Steuerung</h1>
+    <br>
+    <br>
+    <div id="handcontroll-buttons">
+        <form id="form1_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Bestelle ein rotes Werkstück.">
+            <input id="Button1" class="btn btn-white" type="submit" value="Bestelle ein rotes Werkstück."/>
+        </form>
+        <br>
+        <form id="form2_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Bestelle ein weißes Werkstück.">
+            <input id="Button2" class="btn btn-white" type="submit" value="Bestelle ein weißes Werkstück."/>
+        </form>
+        <br>
+        <form id="form3_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Bestelle ein blaues Werkstück.">
+            <input id="Button3" class="btn btn-white" type="submit" value="Bestelle ein blaues Werkstück."/>
+        </form>
+        <br>
+        <form id="form4_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Wieviele rote Werkstücke befinden sich im Lager?">
+            <input id="Button4" class="btn btn-white" type="submit" value="Wie viele rote Werkstücke befinden sich im Lager?"/>
+        </form>
+        <br>
+        <form id="form5_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Wieviele weiße Werkstücke befinden sich im Lager?">
+            <input id="Button5" class="btn btn-white" type="submit" value="Wie viele weiße Werkstücke befinden sich im Lager?"/>
+        </form>
+        <br>
+        <form id="form6_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Wieviele blaue Werkstücke befinden sich im Lager?">
+            <input id="Button6" class="btn btn-white" type="submit" value="Wie viele blaue Werkstücke befinden sich im Lager?"/>
+        </form>
+        <br>
+        <form id="form7_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Wie ist die Temperatur gerade?">
+            <input id="Button7" class="btn btn-white" type="submit" value="Wie ist die Temperatur gerade?"/>
+        </form>
+        <br>
+        <form id="form8_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Wie ist der Luftdruck gerade?">
+            <input id="Button8" class="btn btn-white" type="submit" value="Wie ist der Luftdruck gerade?"/>
+        </form>
+        <br>
+        <form id="form9_AH" method="post" asp-controller="Settings" asp-action="ExecuteManualCommand" asp-route-value="Wo befindet sich meine Bestellung gerade?">
+            <input id="Button9" class="btn btn-white" type="submit" value="Wo befindet sich meine Bestellung gerade?"/>
+        </form>
+    </div>
+</div>

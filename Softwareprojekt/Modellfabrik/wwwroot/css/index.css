@@ -1,0 +1,106 @@
+﻿/*Zentrale Positionierung des Speechbuttons und Infotextes*/
+#center {
+    padding-top: 10%;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    z-index: -2;
+}
+
+/*Hier tippen oder "Factory" sagen! styling*/
+#info-text {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    visibility: hidden;
+}
+
+/*Sprachverlauf-Label styling*/
+#speech-history-label {
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 10px; 
+}
+
+/*Position der linken Speechbubble*/
+#speech-bubble-me {
+    position: absolute;
+    visibility: hidden;
+    top: 10px;
+    left: 90px;
+}
+
+/*Position der rechten Speechbubble*/
+#speech-bubble-factory {
+    position: absolute;
+    bottom: 10px;
+    right: 90px;
+    visibility: hidden
+}
+
+/*Text innerhalb der Sprechblasen*/
+.text-in-bubble {
+    position: absolute;
+    font-size: 20px;
+    visibility: hidden;
+    font-weight: bold;
+}
+
+/*Position des gesagten Textes*/
+#text-me {
+    top: 20px;
+    left: 105px;
+    width: 810px;
+    height: 70px;
+}
+
+/*Position des Antworttextes*/
+#text-factory {
+    bottom: 65px;
+    right: 103px;
+    width: 820px;
+    height: 70px;
+}
+
+/*Position der Zeit*/
+#answer-time {
+    bottom: 60px;
+    right: 120px;
+}
+
+/*Position Panel*/
+#lower {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    width: 100%;
+    z-index: -1;
+}
+
+/*Style des unteren Panels*/
+.w3-container {
+    position: relative;
+    background-color: #445095;
+}
+
+/*Alles was im Panel ist, zentrieren*/
+#lower-panel {
+    text-align: center;
+}
+
+/*Style der Textbox*/
+#story {
+    margin-left: 10px;
+    text-align: center;
+    font-size: large;
+    background: #1D2865;
+    color: #ffffff;
+    border: none;
+    resize: none;
+    margin-top: 10px;
+}

@@ -1,0 +1,28 @@
+﻿@page
+@using Modellfabrik.Models
+@model ServiceClassModel
+
+<div id="center">
+    <p id="info-text">Hier tippen oder "Factory" sagen!</p>
+
+    <button type="button" disabled="disabled" onclick="buttonPressed();" id="speechbutton" class="speechbutton">
+        <img id="mic-icon" src="~/Images/mic.png" alt="mic" />
+    </button>
+    <div id="pulser" class="speechbutton"></div>
+</div>
+
+<div id="lower">
+    <label id="speech-history-label" for="story">Sprachverlauf:</label>
+
+    <div class="w3-container">
+        <img id="speech-bubble-me" src="Images/MySpeechbubble.png" />
+        <img id="speech-bubble-factory" src="/Images/FactorySpeechbubble.png" />
+        <text class="text-in-bubble" id="text-me"></text>
+        <text class="text-in-bubble" id="text-factory"></text>
+        <text class="text-in-bubble" id="answer-time"></text>
+
+        <div id="lower-panel">
+            <textarea id="story" readonly="readonly" rows="9" cols="120"></textarea>
+        </div>
+    </div>
+</div>

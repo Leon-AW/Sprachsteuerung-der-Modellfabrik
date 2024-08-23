@@ -1,0 +1,14 @@
+﻿/*Style für die Ausrichung der Buttons in manueller Steuerung*/
+#handcontroll-buttons {
+    text-align: center
+}
+
+/*Style für die Buttons in manueller Steuerung*/
+#handcontroll-buttons input {
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+}

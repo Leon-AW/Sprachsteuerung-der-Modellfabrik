@@ -1,0 +1,18 @@
+﻿/*Style für die Überschrift der Lizens*/
+#license h5 {
+    color: aliceblue;
+    text-align: center;
+}
+
+/*Style für die Farbe vom Referenzlink*/
+#license a {
+    color: yellow
+}
+
+/*Style für Schrift der Lizenz*/
+#license p {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    color: aliceblue;
+}

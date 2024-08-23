@@ -1,0 +1,22 @@
+image : mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
+
+build-job:
+  stage: build
+  tags:
+    - Docker
+    - FB2
+    - Windows
+    - Runner
+  script:
+    - echo "Hello, $GITLAB_USER_LOGIN!"
+    - dotnet build ".\Softwareprojekt\Sprachsteuerung.sln"
+
+test-job:
+  stage: test
+  tags:
+    - Docker
+    - FB2
+    - Windows
+    - Runner
+  script:
+    - dotnet test ".\Softwareprojekt\Sprachsteuerung.sln"
