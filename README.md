@@ -11,6 +11,9 @@
 Mit Hilfe dieses Softwareentwicklungsprojekt soll die Kommunikation zwischen der Modellfabrik und einem User über eine Sprachsteuerung erfolgen.
 Das Prinzip der Sprachsteuerung soll an einem Modell einer Fabrik umgesetzt werden. Hierfür soll die fischertechnik Modellfabrik verwendet werden. Für die Verarbeitung wird dabei ein RaspberryPi 3b verwendet.
 
+* Bericht von PI Informatik zum Projekt: https://www.pi-informatik.berlin/blog/sprachsteuerung-modellfabrik/
+* Demonstration des Projektes: https://youtu.be/jy6Qtb0s4qU
+
 ## Voraussetzungen zur Nutzung der Software
 
 - Eine Internet-Verbindung sollte vorhanden sein.
